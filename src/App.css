@@ -19,7 +19,7 @@ body {
 
 #root {
   background-color: var(--swatch-primary);
-  font-family: serif;
+  font-family: 'Tangerine',serif;
   position: absolute;
   width: 80%;
   left: 10%;
@@ -108,25 +108,25 @@ body {
   float:left;
 }
 
-.list-card, .selected-list-card, .unselected-list-card {
+.list-card, .selected-list-card, .unselected-list-card, .playlister-song,.playlister-song-dragged-to {
   font-size: 18pt;
   margin: 10px;
   padding: 20px;
   border-radius: 25px;
 }
 
-.unselected-list-card:hover {
+.unselected-list-card:hover, .playlister-song:hover {
   cursor: pointer;
   background-color: var(--swatch-contrast);
   color:white;
 }
 
-.selected-list-card {
+.selected-list-card, .playlister-song-dragged-to {
   background-color: var(--swatch-accent);
   color: white;
 }
 
-.unselected-list-card {
+.unselected-list-card,.playlister-song{
   background-color: var(--swatch-complement);
 }
 
@@ -191,8 +191,8 @@ input {
 
 .modal-root {
   position: relative;
-  max-width: 1200vw;
-  max-height: 600vh;
+  max-width: 70vw;
+  max-height: 80vh;
   overflow: visible;
   display: flex;
   flex-direction: column;
